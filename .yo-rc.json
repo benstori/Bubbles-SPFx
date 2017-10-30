@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.1.0",
+    "libraryName": "hq-circle-nav",
+    "libraryId": "1a7ff3fc-3c28-4786-b777-ab52f2d2641f",
+    "environment": "spo"
+  }
+}
