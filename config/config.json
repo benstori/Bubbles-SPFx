@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/hqCircleNav/HqCircleNavWebPart.js",
+      "manifest": "./src/webparts/hqCircleNav/HqCircleNavWebPart.manifest.json",
+      "outputPath": "./dist/hq-circle-nav.bundle.js"
+    }
+  ],
+  "externals": {
+    "jquery": {
+      "path": "https://code.jquery.com/jquery-1.12.4.js",
+      "globalName": "jquery"
+    },
+    "bootstrap": {
+      "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+      "globalName": "bootstrap"
+    }
+  },
+  "localizedResources": {
+    "hqCircleNavStrings": "webparts/hqCircleNav/loc/{locale}.js"
+  }
+}

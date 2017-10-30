@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "hq-circle-nav-client-side-solution",
+    "id": "1a7ff3fc-3c28-4786-b777-ab52f2d2641f",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/hq-circle-nav.sppkg"
+  }
+}
