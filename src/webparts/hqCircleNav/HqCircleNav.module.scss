@@ -1,0 +1,203 @@
+@import url("http://hello.myfonts.net/count/34be8f");
+
+@font-face {
+  font-family: 'TradeGothicLT';
+  src: url('http://hello.myfonts.net/webfonts/34BE8F_0_0.eot');
+  src: url('http://hello.myfonts.net/webfonts/34BE8F_0_0.eot?#iefix') format('embedded-opentype'),url('http://hello.myfonts.net/webfonts/34BE8F_0_0.woff2') format('woff2'),url('http://hello.myfonts.net/webfonts/34BE8F_0_0.woff') format('woff'),url('http://hello.myfonts.net/webfonts/34BE8F_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TradeGothicLTPro-Bd2';
+  src: url('http://hello.myfonts.net/webfonts/34BE8F_1_0.eot');
+  src: url('http://hello.myfonts.net/webfonts/34BE8F_1_0.eot?#iefix') format('embedded-opentype'),url('http://hello.myfonts.net/webfonts/34BE8F_1_0.woff2') format('woff2'),url('http://hello.myfonts.net/webfonts/34BE8F_1_0.woff') format('woff'),url('http://hello.myfonts.net/webfonts/34BE8F_1_0.ttf') format('truetype');
+}
+
+$tradeGothicLT:'TradeGothicLT';
+$tradeGothicBold: 'TradeGothicLTPro-Bd2';
+$sdgBlue: #1863B3;
+$sdgGray:#BCBFC3;
+$sdgLightBlue:#D0e7ff;
+
+.hqCircleNav {
+  .container {
+    max-width: 620px;
+    margin: 0px auto;
+  }
+
+  .row {
+    padding: 20px;
+  }
+
+  .listItem {
+    max-width: 715px;
+    margin: 5px auto 5px auto;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: #0078d7;
+    border-color: #0078d7;
+    color: #ffffff;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: 600;
+      font-size: 14px;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+
+  .circle {
+    background:$sdgBlue;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin:5px;
+    overflow:hidden;
+    font-family: $tradeGothicBold;
+    position:relative;
+	border: solid 2px #1863B3;
+	color:#fff;
+	
+ &:hover .overlay{
+    background: #BCBFC3;
+    bottom: 0;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color:$sdgBlue;
+    font-size: 17px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: $tradeGothicBold;
+  }
+
+  a:hover{text-decoration: none;}
+
+  .icon {
+    position: relative;
+    padding-top: 16px;
+  }
+	
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .01s ease;
+  border-radius: 50%;
+}
+
+
+.circle2 {
+  background:$sdgBlue;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin:5px;
+  overflow:hidden;
+  font-family: $tradeGothicBold;
+border: solid 2px #1863B3;
+color:#fff;
+	
+  a:hover{text-decoration: none;}
+
+  .txt{
+    display: block;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 30pt;
+    font-family: $tradeGothicBold; 
+  }
+
+  .txt:hover{background: #BCBFC3;color: #1863B3;}
+	
+}
+.smCircle {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin:35px;
+    overflow:hidden;
+    padding:0px;
+    position:relative;
+	border: solid 2px #1864B3;
+	margin-left:2px;
+	margin-right:5px;
+	margin-top:0px;
+}
+
+/*
+&:hover {
+    background: orange;
+    transition: all 150ms linear;
+    .icon { 
+      transition: all 200ms ease-in;
+      //animation: icon-up 300ms; 
+      top: -110px;
+			font-size: 28pt;
+			color:  white;
+    }
+    .text {
+      transition: all 500ms ease-out;
+      animation: icon-down 500ms;
+      top: 20px;
+    }*/
+
+@keyframes icon-down {
+  0% {
+    display: block;
+    top: -100px;
+  }
+  100% {
+    top: 20px;
+    color: #fff;
+  }
+} 
+
+}

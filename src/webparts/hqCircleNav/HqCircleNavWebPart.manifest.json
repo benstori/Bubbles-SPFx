@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "96dd83f6-8ccb-4632-a5a1-bc40b672b438",
+  "alias": "HqCircleNavWebPart",
+  "componentType": "WebPart",
+  "version": "*", // The "*" signifies that the version should be taken from the package.json
+  "manifestVersion": 2,
+
+  /**
+   * This property should only be set to true if it is certain that the webpart does not
+   *  allow arbitrary scripts to be called
+   */
+  "safeWithCustomScriptDisabled": false,
+
+  "preconfiguredEntries": [{
+    "groupId": "96dd83f6-8ccb-4632-a5a1-bc40b672b438",
+    "group": { "default": "sdq HQ" },
+    "title": { "default": "hqCircleNav" },
+    "description": { "default": "navigation for the subsites for sdg hq" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "hqCircleNav",
+      "circle1Url":"https://solutiondesigngroup.sharepoint.com",
+      "circle2Url":"https://solutiondesigngroup.sharepoint.com",
+      "circle3Url":"https://solutiondesigngroup.sharepoint.com",
+      "circle4Url":"https://solutiondesigngroup.sharepoint.com",
+      "circle5Url":"https://solutiondesigngroup.sharepoint.com",
+      "iconLocation":"/SiteAssets/icons/multiple-users-silhouette.png",
+      "icon2Location":"/SiteAssets/icons/ciatations.png",
+      "icon3Location":"/SiteAssets/icons/cabin.png",
+      "icon4Location":"/SiteAssets/icons/esop.png",
+      "icon5Location":"/SiteAssets/icons/post-it.png",
+      "homeURL":"https://solutiondesigngroup.sharepoint.com",
+      "hoverText":"directory",
+      "hover2Text":"citations",
+      "hover3Text":"cabins",
+      "hover4Text":"esop",
+      "hover5Text":"post-it"
+    }
+  }]
+}
